@@ -19,7 +19,7 @@ def load_lottie_animation(file_path):
 
 # Function to apply snowfall effect
 def run_snow_animation():
-    rain(emoji="❄️", font_size=20, falling_speed=5, animation_length="infinite")
+    rain(emoji="🌛", font_size=20, falling_speed=5, animation_length="infinite")
 
 
 # Function to get the name from query parameters
@@ -29,7 +29,7 @@ def get_person_name():
 
 
 # Page configuration
-st.set_page_config(page_title="Happy Holidays", page_icon="🎄")
+st.set_page_config(page_title="Happy Ramadan", page_icon="🌛")
 
 # Run snowfall animation
 run_snow_animation()
@@ -40,7 +40,7 @@ with open(CSS_FILE) as f:
 
 # Display header with personalized name
 PERSON_NAME = get_person_name()
-st.header(f"Happy Holidays, {PERSON_NAME}! 🎄", anchor=False)
+st.header(f"Happy Ramadan, {PERSON_NAME}! 🌛", anchor=False)
 
 # Display the Lottie animation
 lottie_animation = load_lottie_animation(LOTTIE_ANIMATION)
@@ -48,7 +48,7 @@ st_lottie(lottie_animation, key="lottie-holiday", height=300)
 
 # Personalized holiday message
 st.markdown(
-    f"Dear {PERSON_NAME}, wishing you a wonderful holiday season filled with joy and peace. 🌟"
+    f"Dear {PERSON_NAME}, wishing you a wonderful Ramadan season filled with joy and peace. 🌛"
 )
 
 
